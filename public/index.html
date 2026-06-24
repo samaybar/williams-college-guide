@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Looking at Williams — A Guide for High School Seniors</title>
+<meta name="description" content="A factual guide to what a prospective student should look at when considering Williams College: academics, the tutorial system, financial aid, campus life, and how to visit." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #1c1a17;
+    --paper: #f6f3ec;
+    --paper-2: #efe9dd;
+    --purple: #500082;
+    --purple-deep: #36005a;
+    --gold: #b88a2e;
+    --rule: #d6cdba;
+    --muted: #6a635a;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--purple); text-decoration: none; border-bottom: 1px solid rgba(80,0,130,0.3); }
+  a:hover { border-bottom-color: var(--purple); }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+
+  header.site {
+    border-bottom: 1px solid var(--rule);
+    background: var(--paper);
+    position: sticky; top: 0; z-index: 10;
+    backdrop-filter: blur(6px);
+  }
+  header.site .bar {
+    display: flex; align-items: baseline; justify-content: space-between;
+    padding: 14px 0; gap: 16px;
+  }
+  .mark {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--purple); border-bottom: none;
+  }
+  nav.toc { display: flex; gap: 18px; flex-wrap: wrap; }
+  nav.toc a {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px; letter-spacing: 0.04em; color: var(--muted);
+    border-bottom: none;
+  }
+  nav.toc a:hover { color: var(--purple); }
+
+  .hero { padding: 72px 0 40px; border-bottom: 1px solid var(--rule); }
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--gold); margin: 0 0 18px;
+  }
+  h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 500;
+    font-size: clamp(34px, 6vw, 56px);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 0 0 20px;
+  }
+  .hero p.lead {
+    font-size: 19px; color: var(--ink); max-width: 60ch; margin: 0 0 8px;
+  }
+  .hero p.note { color: var(--muted); font-size: 15px; max-width: 60ch; }
+
+  .stats {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 0; border: 1px solid var(--rule); border-radius: 4px;
+    margin: 36px 0 0; overflow: hidden; background: var(--paper-2);
+  }
+  .stat { padding: 18px 16px; border-right: 1px solid var(--rule); }
+  .stat:last-child { border-right: none; }
+  .stat .n {
+    font-family: "Fraunces", serif; font-size: 26px; color: var(--purple-deep);
+    display: block; line-height: 1;
+  }
+  .stat .l {
+    font-family: "IBM Plex Mono", monospace; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted);
+    margin-top: 8px; display: block;
+  }
+  @media (max-width: 640px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .stat:nth-child(2) { border-right: none; }
+    .stat:nth-child(1), .stat:nth-child(2) { border-bottom: 1px solid var(--rule); }
+  }
+
+  section { padding: 56px 0; border-bottom: 1px solid var(--rule); }
+  .sec-num {
+    font-family: "IBM Plex Mono", monospace; font-size: 12px;
+    color: var(--gold); letter-spacing: 0.1em; display: block; margin-bottom: 10px;
+  }
+  h2 {
+    font-family: "Fraunces", serif; font-weight: 500;
+    font-size: clamp(26px, 4vw, 34px); line-height: 1.15;
+    margin: 0 0 18px; letter-spacing: -0.01em;
+  }
+  h3 {
+    font-family: "Inter", sans-serif; font-weight: 600; font-size: 18px;
+    margin: 28px 0 8px;
+  }
+  p { margin: 0 0 16px; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .muted { color: var(--muted); }
+
+  .video {
+    position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
+    border-radius: 6px; border: 1px solid var(--rule); margin: 20px 0 8px;
+    background: #000;
+  }
+  .video iframe {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
+  }
+  .caption {
+    font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--muted);
+    margin: 0 0 8px;
+  }
+
+  .callout {
+    background: var(--paper-2); border-left: 3px solid var(--purple);
+    padding: 18px 20px; border-radius: 0 4px 4px 0; margin: 24px 0;
+  }
+  .callout h3 { margin-top: 0; }
+  .callout p:last-child { margin-bottom: 0; }
+
+  .links { list-style: none; padding: 0; margin: 16px 0 0; }
+  .links li {
+    border-top: 1px solid var(--rule); padding: 12px 0; display: flex;
+    justify-content: space-between; align-items: baseline; gap: 12px;
+  }
+  .links li:last-child { border-bottom: 1px solid var(--rule); }
+  .links .desc { color: var(--muted); font-size: 14px; }
+  .links a { border-bottom: none; font-weight: 500; }
+
+  footer {
+    padding: 40px 0 60px; color: var(--muted); font-size: 14px;
+  }
+  footer p { margin: 0 0 8px; }
+  .disclaimer {
+    font-family: "IBM Plex Mono", monospace; font-size: 12px;
+    line-height: 1.6;
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap bar">
+    <span class="mark">Williams · A Senior's Guide</span>
+    <nav class="toc">
+      <a href="#academics">Academics</a>
+      <a href="#tutorials">Tutorials</a>
+      <a href="#aid">Cost &amp; Aid</a>
+      <a href="#life">Campus Life</a>
+      <a href="#visit">Visit</a>
+      <a href="#apply">Apply</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero wrap">
+  <p class="eyebrow">For the prospective student</p>
+  <h1>What to actually look at when you consider Williams.</h1>
+  <p class="lead">Williams is a liberal arts college in Williamstown, in the northwest corner of Massachusetts. It enrolls roughly 2,000 undergraduates. This guide walks through the specific things worth examining before you apply, with links to the college's own pages so you can verify everything yourself.</p>
+  <p class="note">Figures below are drawn from Williams' official sites and recent admissions data. Always check the official pages for the most current numbers.</p>
+
+  <div class="stats">
+    <div class="stat"><span class="n">~2,000</span><span class="l">Undergraduates</span></div>
+    <div class="stat"><span class="n">7:1</span><span class="l">Student–faculty ratio</span></div>
+    <div class="stat"><span class="n">65+</span><span class="l">Tutorials / year</span></div>
+    <div class="stat"><span class="n">~8.5%</span><span class="l">Admit rate, '29</span></div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <section id="overview">
+    <span class="sec-num">00 / Start here</span>
+    <h2>A nine-minute look at campus</h2>
+    <p>Before reading further, it's worth seeing the place. This is the college's official student-led virtual tour, which walks through the main spaces on campus in under nine minutes.</p>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/PAQ5ZvSJtSY" title="Williams College Virtual Tour" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+    <p class="caption">Source: Williams College official YouTube channel.</p>
+  </section>
+
+  <section id="academics">
+    <span class="sec-num">01 / Academics</span>
+    <h2>The curriculum and how it's taught</h2>
+    <p>Williams is undergraduate-focused. All classes are taught by professors rather than teaching assistants, and the student–faculty ratio is 7:1, among the lowest of any college. The college lists more than 700 courses annually across roughly 36 majors and a set of concentrations (its term for minors).</p>
+    <p>The calendar is unusual. Williams runs a <strong>4-1-4 schedule</strong>: a fall semester, a three-week January term called <strong>Winter Study</strong> in which you take a single subject (often pass/fail, sometimes a trip, internship, or independent project), and a spring semester.</p>
+    <h3>What to look at</h3>
+    <ul>
+      <li>Whether the majors you're considering are actually offered, and how large their introductory classes are.</li>
+      <li>The distribution requirements — Williams asks students to take courses across three divisions plus other requirements.</li>
+      <li>Research opportunities: the college reports that roughly 40% of students do funded research at some point.</li>
+    </ul>
+    <ul class="links">
+      <li><a href="https://www.williams.edu/academics/">Academics at Williams</a><span class="desc">Official overview</span></li>
+      <li><a href="https://catalog.williams.edu/">Course Catalog</a><span class="desc">Majors, courses, requirements</span></li>
+      <li><a href="https://winterstudy.williams.edu/">Winter Study</a><span class="desc">The January term</span></li>
+    </ul>
+  </section>
+
+  <section id="tutorials">
+    <span class="sec-num">02 / The signature feature</span>
+    <h2>The Oxford-style tutorial system</h2>
+    <p>This is the thing most often cited as distinctive about Williams, and it's worth understanding concretely. In a tutorial, a small number of students — frequently just two — meet weekly with a single professor. Each week, students alternate: one presents independent work (an essay, a problem set, a lab report, an art critique) while the other responds to it, then they switch.</p>
+    <p>Williams introduced the format in 1988, modeled on Oxford's. The college offers 65 or more tutorials each year across the curriculum, and a large share of students take at least one before graduating. If close, discussion-heavy, writing-intensive work appeals to you, this is a feature to weigh heavily.</p>
+    <div class="callout">
+      <h3>Related: a year at Oxford</h3>
+      <p>Juniors can apply to the <a href="https://exeter.williams.edu/">Williams-Exeter Programme at Oxford</a>, spending a full year studying under the actual Oxford tutorial system at Exeter College. It's selective and requires a 3.5 GPA to apply, but it's a direct extension of what the on-campus tutorials are modeled on.</p>
+    </div>
+    <ul class="links">
+      <li><a href="https://www.williams.edu/academics/">Tutorials overview</a><span class="desc">How the format works</span></li>
+      <li><a href="https://exeter.williams.edu/">Williams-Exeter at Oxford</a><span class="desc">The junior-year program</span></li>
+    </ul>
+  </section>
+
+  <section id="aid">
+    <span class="sec-num">03 / Cost &amp; financial aid</span>
+    <h2>What it costs, and what it might actually cost you</h2>
+    <p>The published price ("sticker price") and the price a given family pays are usually very different. Williams meets 100% of demonstrated financial need, and has moved to an "all-grant" aid model, meaning need-based aid is awarded as grants rather than loans. Williams also practices need-blind admission for domestic applicants.</p>
+    <p>Two things to do, in order: run the <strong>Net Price Calculator</strong> with your family's actual numbers, then compare that estimate against other schools on your list. The sticker price tells you very little on its own.</p>
+    <ul class="links">
+      <li><a href="https://www.williams.edu/admission-aid/">Admission &amp; Financial Aid</a><span class="desc">Official hub</span></li>
+      <li><a href="https://npc.collegeboard.org/app/williams">Net Price Calculator</a><span class="desc">Estimate your real cost</span></li>
+    </ul>
+  </section>
+
+  <section id="life">
+    <span class="sec-num">04 / Campus life</span>
+    <h2>Where you'll live, and what there is to do</h2>
+    <p>Williams is residential — nearly all students live on campus all four years, in a house/residential system rather than fraternities, which the college phased out decades ago. The setting is rural: Williamstown sits in the Berkshire mountains, which shapes daily life as much as anything academic.</p>
+    <h3>Athletics and the outdoors</h3>
+    <p>Williams competes in NCAA Division III in the NESCAC conference, with 32 varsity teams plus extensive club and intramural sports. A large share of students play at some level. The <strong>Williams Outing Club</strong> is one of the most active student organizations, running trips into the surrounding mountains and forests.</p>
+    <h3>Arts and museums</h3>
+    <p>The college is connected to notable art institutions including the <a href="https://www.clarkart.edu/">Clark Art Institute</a> and MASS MoCA nearby — unusual resources for a school this size, and worth a look if the arts matter to you.</p>
+    <ul class="links">
+      <li><a href="https://student-life.williams.edu/">Student Life</a><span class="desc">Housing, clubs, dining</span></li>
+      <li><a href="https://ephsports.williams.edu/">Williams Athletics (Ephs)</a><span class="desc">Varsity and club sports</span></li>
+      <li><a href="https://wso.williams.edu/wiki/index.php/Williams_Outing_Club">Williams Outing Club</a><span class="desc">The outdoors program</span></li>
+    </ul>
+  </section>
+
+  <section id="visit">
+    <span class="sec-num">05 / Seeing it for yourself</span>
+    <h2>Visiting, virtually or in person</h2>
+    <p>A campus visit is the single best way to judge fit, and Williams runs regular tours and hour-long information sessions with an admission officer and a current student. If you can't get to the Berkshires, the official channels below let you see a lot from a distance.</p>
+    <p>One program worth knowing about: <strong>Windows on Williams (WOW)</strong> is a free three-day fly-in for rising seniors. Williams covers transportation, meals, and overnight housing in a dorm, and you attend classes and meet faculty. If you're eligible, it's the most thorough way to experience the place at no cost.</p>
+    <h3>A walk through campus</h3>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=UU8wQHUExqv0lf2Bohp0CnpA" title="Williams College — official videos" loading="lazy" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+    <p class="caption">Williams College official YouTube channel — recent videos.</p>
+    <ul class="links">
+      <li><a href="https://www.williams.edu/admission-aid/visit-and-connect/">Visit &amp; Connect</a><span class="desc">Tours and info sessions</span></li>
+      <li><a href="https://welcome.williams.edu/">Welcome to Williams</a><span class="desc">For admitted &amp; prospective students</span></li>
+      <li><a href="https://www.youtube.com/williamscollege">Official YouTube channel</a><span class="desc">More video</span></li>
+    </ul>
+  </section>
+
+  <section id="apply">
+    <span class="sec-num">06 / Applying</span>
+    <h2>What the application looks like</h2>
+    <p>Williams is highly selective: it admitted about 8.5% of applicants to the Class of 2029. It accepts the Common Application, the Coalition Application, and QuestBridge. The college is currently test-optional, so you decide whether to submit SAT or ACT scores.</p>
+    <p>A practical note: Williams does not consider "demonstrated interest," so visiting or emailing won't change your odds. Focus your energy on the application itself. Decide early between Early Decision (binding) and Regular Decision, and confirm current deadlines on the official page — they change year to year.</p>
+    <div class="callout">
+      <h3>Before you apply, ask yourself</h3>
+      <p>Does the tutorial system genuinely appeal to you? Are you comfortable in a small, rural, residential community? Did the Net Price Calculator produce a number that works? Those three questions matter more than the prestige.</p>
+    </div>
+    <ul class="links">
+      <li><a href="https://www.williams.edu/admission-aid/">Admission &amp; Financial Aid</a><span class="desc">Deadlines &amp; requirements</span></li>
+      <li><a href="https://admission.williams.edu/">Office of Admission</a><span class="desc">Apply &amp; connect</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p class="disclaimer">This is an independent, informational guide for prospective students. It is not affiliated with, endorsed by, or operated by Williams College. All facts link to official Williams pages — verify current figures and deadlines there before deciding. Video content is embedded from Williams College's official YouTube channel.</p>
+</footer>
+
+</body>
+</html>
