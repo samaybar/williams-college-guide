@@ -1,0 +1,11 @@
+{
+  "name": "williams-guide",
+  "version": "1.0.0",
+  "description": "A factual guide to Williams College for prospective seniors",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
